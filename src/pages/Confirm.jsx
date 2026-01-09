@@ -24,7 +24,7 @@ const Confirm = () => {
           now being processed.
         </p>
 
-        <button className="order-btn" onClick={() => navigate("/home")}>
+        <button className="order-btn" onClick={()=>navigate("/home")}>
           Go to Orders →
         </button>
       </div>

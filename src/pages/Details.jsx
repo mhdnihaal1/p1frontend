@@ -128,7 +128,7 @@ useEffect(() => {
  <div className="product-grid">
 
    {products.map((val, ind) => (
-  <div className="productCard" key={val._id || ind}  onClick={() => navigate(`/detail/${val._id}`)}>
+  <div className="productCard" key={val._id || ind}  onClick={()=>navigate(`/moreDetail/${val._id}`)}>
     
     <div className="productImageWrapper">
       <span className="wishlistIcon">♡</span>

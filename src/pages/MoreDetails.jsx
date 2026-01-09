@@ -49,14 +49,14 @@ const MoreDetails = () => {
           </div>
 
           <div className="pd-info">
-            <h2 className="pd-title">Floral Summer Dress</h2>
+            <h2 className="pd-title">{product.name}</h2>
 
             <div className="pd-rating">
               ⭐ 4.5 <span>(0 reviews)</span>
             </div>
 
             <div className="pd-price">
-              <span className="pd-current">₹1399</span>
+              <span className="pd-current">₹{product.price}</span>
               <span className="pd-old">₹1999</span>
               <span className="pd-off">30% OFF</span>
             </div>
@@ -109,7 +109,7 @@ const MoreDetails = () => {
             <span>₹1449</span>
           </div>
 
-          <button className="pd-pay-btn">Confirm & Pay ₹1449</button>
+          <button className="pd-pay-btn" onClick={()=>navigate("/confirm")}>Confirm & Pay ₹1449</button>
         </div>
       </div>
  

@@ -88,7 +88,7 @@ const navigate = useNavigate();
       <div className="new-arrivals-cards">
  <div className="product-grid">
  {products.map((val, ind) => (
-  <div className="productCard" key={val._id || ind}>
+  <div className="productCard" key={val._id || ind}  onClick={() => navigate(`/detail/${val._id}`)}>
     
     <div className="productImageWrapper">
       <span className="wishlistIcon">♡</span>

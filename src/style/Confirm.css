@@ -276,13 +276,13 @@ body {
 
 /* BUTTON */
 .order-btn {
+  cursor: pointer;
   background: #ff6b35;
   color: white;
   border: none;
   padding: 10px 22px;
   border-radius: 6px;
   font-size: 13px;
-  cursor: pointer;
 }
 
 /* BOTTOM INFO BAR */
@@ -308,6 +308,8 @@ body {
   height: 320px;
   object-fit: contain;
   z-index: 1;
+    pointer-events: none;
+
 }
 .h{
     font-size: Delius;
