@@ -51,8 +51,7 @@ const navigate = useNavigate();
         src={val.images[0]}
         alt={val.name}
       />
-      {console.log(123,":",val.images[0])}
-    </div>
+     </div>
 
     <div className="productDetails">
       <h4 className="productTitle">{val.name}</h4>
@@ -95,7 +94,7 @@ const navigate = useNavigate();
       <span className="wishlistIcon">♡</span>
      <img
         className="productImage"
-        src={`https://p1backend.onrender.com/${val.images[0]}`}
+        src={val.images[0]}
         alt={val.name}
       />
     </div>

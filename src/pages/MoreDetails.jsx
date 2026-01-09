@@ -42,7 +42,7 @@ const MoreDetails = () => {
           <div className="pd-image-box">
             <span className="pd-wishlist">♡</span>
             <img
-              src={`https://p1backend.onrender.com/${product.images[0]}`}
+        src={product.images[0]}
               alt="Dress"
             />
           </div>

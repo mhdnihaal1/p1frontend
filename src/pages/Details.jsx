@@ -46,24 +46,24 @@ useEffect(() => {
            <div className="thumbnail-column"  >
             <img
               className="thumbnail active"
-              src={`https://p1backend.onrender.com/${product.images[0]}`}
+        src={product.images[0]}
               alt="Thumb 1"
             />
             <img
               className="thumbnail"
-              src={`https://p1backend.onrender.com/${product.images[1]}`}
+        src={product.images[1]}
               alt="Thumb 2"
             />
             <img
               className="thumbnail"
-              src={`https://p1backend.onrender.com/${product.images[2]}`}
+        src={product.images[2]}
               alt="Thumb 3"
             />
           </div>
  
           <div className="main-image">
             <img
-              src={`https://p1backend.onrender.com/${product.images[3]}`}
+        src={product.images[3]}
               alt="Product"
             />
           </div>
@@ -134,7 +134,7 @@ useEffect(() => {
       <span className="wishlistIcon">♡</span>
       <img
         className="productImage"
-        src={`https://p1backend.onrender.com/${val.images[0]}`}
+        src={val.images[0]}
         alt={val.name}
       />
     </div>
