@@ -17,7 +17,7 @@ const Entry = () => {
     <div className="entry-container">
       <img
         className="entry-image"
-        src="/image 16.png"
+        src="/image16.png"
         alt="Wonky Logo"
       />
       <span className="entry-text">Web Developer Task</span>
