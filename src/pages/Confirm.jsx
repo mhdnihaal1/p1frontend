@@ -28,7 +28,7 @@ const Confirm = () => {
 
           <div className="confirm-checkmark">✔</div>
 
-          <h2 className="confirm-title">Thank You!</h2>
+          <h2 className="confirm-title">Thank you for shopping</h2>
 
           <p className="confirm-description">
             Your order has been placed successfully.<br />
