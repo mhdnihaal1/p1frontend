@@ -53,19 +53,20 @@ const AdminDetails = () => {
     try {
       const res = await axios.post(
         "http://localhost:5000/addProduct",
-        formData,{
-  headers: { "Content-Type": "multipart/form-data" }
-});
+        formData)
 
-      console.log("Success:", res.data);
-      if(res.data.status == 200){
-        navigate("/adminConfirm")
-      setName("")
-      setPrice("")
-      setDescription("")
-      setImages([null, null, null, null])
-      }
+        console.log(123,123)
 
+      // console.log("Success:", res.data);
+      // if(res.data.status == 200){
+        navigate("/adminDetail")
+        console.log(res)
+      // setName("")
+      // setPrice("")
+      // setDescription("")
+      // setImages([null, null, null, null])
+      // }
+// 
  
   
     } catch (err) {

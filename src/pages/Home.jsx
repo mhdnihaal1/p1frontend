@@ -23,7 +23,7 @@ const navigate = useNavigate();
 
     fetchProducts();
   }, []);
-  
+
   return (
     <div className="home-container">
       <Navbar />
@@ -48,7 +48,7 @@ const navigate = useNavigate();
       <span className="wishlistIcon">♡</span>
       <img
         className="productImage"
-        src={`https://p1backend.onrender.com/${val.images[0]}`}
+        src={`${val.images[0]}`}
         alt={val.name}
       />
       {console.log(123,":",val.images[0])}
