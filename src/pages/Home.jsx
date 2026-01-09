@@ -49,7 +49,6 @@ const navigate = useNavigate();
       <img
         className="productImage"
         src={`https://p1backend.onrender.com/${val.images[0]}`}
-        
         alt={val.name}
       />
       {console.log(123,":",val.images[1])}
@@ -94,9 +93,9 @@ const navigate = useNavigate();
     
     <div className="productImageWrapper">
       <span className="wishlistIcon">♡</span>
-      <img
+     <img
         className="productImage"
-        src={`https://p1backend.onrender.com/uploads/${val.images[0]}`}
+        src={`https://p1backend.onrender.com/${val.images[0]}`}
         alt={val.name}
       />
     </div>
