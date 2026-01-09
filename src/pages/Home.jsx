@@ -30,7 +30,7 @@ const navigate = useNavigate();
 
       <div className="home-banner">
         <div>
-          <img src="/ProductCard(11).png" alt="1234" />
+          <img src="/Container.png" alt="1234" />
         </div>
       </div>
 
