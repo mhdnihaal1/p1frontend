@@ -4,18 +4,22 @@ import { useNavigate } from "react-router-dom";
 
 const AdminConfirm = () => {
     const navigate = useNavigate()
-    function goBack() {
-        navigate("/adminHome")
-         }
+        
+         
     return(
-       <div className="success-container">
-        <button className="close-btn" onClick={goBack}>×</button>
-        
-        <div className="success-icon"></div>
-        
-        <h2 className="success-title">Product Added</h2>
-        <p className="success-message">The product has been successfully added</p>
-    </div>
+<div class="page-wrapper">
+  <div class="success-container">
+    <button class="close-btn" onClick={()=>navigate("/adminHome")}>×</button>
+
+    <div class="success-icon"></div>
+
+    <h2 class="success-title">Success</h2>
+    <p class="success-message">
+      Your order has been placed successfully.
+    </p>
+  </div>
+</div>
+
     )
 }
 
