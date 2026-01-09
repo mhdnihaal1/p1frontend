@@ -13,7 +13,7 @@ const MoreDetails = () => {
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const res = await axios.get(`http://localhost:5000/product/${id}`);
+        const res = await axios.get(`https://p1backend.onrender.com/product/${id}`);
         setProduct(res.data);
         console.log(res);
       } catch (error) {
@@ -43,7 +43,7 @@ const MoreDetails = () => {
           <div className="pd-image-box">
             <span className="pd-wishlist">♡</span>
             <img
-              src={`http://localhost:5000/${product.images[0]}`}
+              src={`https://p1backend.onrender.com/${product.images[0]}`}
               alt="Dress"
             />
           </div>

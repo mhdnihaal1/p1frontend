@@ -15,11 +15,11 @@ const Detail = () => {
 useEffect(() => {
   const fetchData = async () => {
     try {
-      const productsRes = await axios.get("http://localhost:5000/products");
+      const productsRes = await axios.get("https://p1backend.onrender.com/products");
       setProducts(productsRes.data);
 
       const productRes = await axios.get(
-        `http://localhost:5000/product/${id}`
+        `https://p1backend.onrender.com/product/${id}`
       );
       setProduct(productRes.data);
 
@@ -46,24 +46,24 @@ useEffect(() => {
            <div className="thumbnail-column"  >
             <img
               className="thumbnail active"
-              src={`http://localhost:5000/${product.images[0]}`}
+              src={`https://p1backend.onrender.com/${product.images[0]}`}
               alt="Thumb 1"
             />
             <img
               className="thumbnail"
-              src={`http://localhost:5000/${product.images[1]}`}
+              src={`https://p1backend.onrender.com/${product.images[1]}`}
               alt="Thumb 2"
             />
             <img
               className="thumbnail"
-              src={`http://localhost:5000/${product.images[2]}`}
+              src={`https://p1backend.onrender.com/${product.images[2]}`}
               alt="Thumb 3"
             />
           </div>
  
           <div className="main-image">
             <img
-              src={`http://localhost:5000/${product.images[3]}`}
+              src={`https://p1backend.onrender.com/${product.images[3]}`}
               alt="Product"
             />
           </div>
@@ -134,7 +134,7 @@ useEffect(() => {
       <span className="wishlistIcon">♡</span>
       <img
         className="productImage"
-        src={`http://localhost:5000/${val.images[0]}`}
+        src={`https://p1backend.onrender.com/${val.images[0]}`}
         alt={val.name}
       />
     </div>

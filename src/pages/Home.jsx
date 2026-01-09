@@ -14,7 +14,7 @@ const navigate = useNavigate();
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/products");
+        const res = await axios.get("https://p1backend.onrender.com/products");
         setProducts(res.data);
        console.log( products)
       } catch (error) {
@@ -48,7 +48,7 @@ const navigate = useNavigate();
       <span className="wishlistIcon">♡</span>
       <img
         className="productImage"
-        src={`http://localhost:5000/${val.images[0]}`}
+        src={`https://p1backend.onrender.com/${val.images[0]}`}
         alt={val.name}
       />
     </div>
@@ -94,7 +94,7 @@ const navigate = useNavigate();
       <span className="wishlistIcon">♡</span>
       <img
         className="productImage"
-        src={`http://localhost:5000/${val.images[0]}`}
+        src={`https://p1backend.onrender.com/${val.images[0]}`}
         alt={val.name}
       />
     </div>

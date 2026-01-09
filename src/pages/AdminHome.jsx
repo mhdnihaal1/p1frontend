@@ -12,7 +12,7 @@ const AdminHome =  () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/products");
+        const res = await axios.get("https://p1backend.onrender.com/products");
         setProducts(res.data);
        console.log( products)
       } catch (error) {
@@ -25,7 +25,7 @@ const AdminHome =  () => {
 
   const handleDelete = async (id) => {
   try {
-    await axios.delete(`http://localhost:5000/deleteProduct/${id}`);
+    await axios.delete(`https://p1backend.onrender.com/deleteProduct/${id}`);
      setProducts(products.filter((p) => p._id !== id));
   } catch (error) {
     console.error("Error deleting product:", error);
@@ -64,7 +64,7 @@ const AdminHome =  () => {
       <td>{ind + 1}</td>
       <td>
         <img
-          src={val.images?.[0] ? `http://localhost:5000/${val.images[0]}` : "/placeholder.png"}
+          src={val.images?.[0] ? `https://p1backend.onrender.com/${val.images[0]}` : "/placeholder.png"}
           alt={val.name ?? "Product Image"}
           style={{
             width: "60px",      // fits in the table nicely
