@@ -9,8 +9,7 @@ const MoreDetails = () => {
   const { id } = useParams();
   const [product, setProduct] = useState(null);
   const navigate = useNavigate();
-  navigate();
-  useEffect(() => {
+   useEffect(() => {
     const fetchProduct = async () => {
       try {
         const res = await axios.get(`https://p1backend.onrender.com/product/${id}`);
