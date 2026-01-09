@@ -1,13 +1,15 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "../style/Entry.css";
 import { useNavigate } from "react-router-dom";
 
-
 const Entry = () => {
-    const navigate = useNavigate();
-      useEffect(() => {
+  const navigate = useNavigate();
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
     const timer = setTimeout(() => {
-      navigate("/home");  
+      setLoading(false);
+      navigate("/home");
     }, 4000);
 
     return () => clearTimeout(timer);
@@ -20,6 +22,15 @@ const Entry = () => {
         src="/image16.png"
         alt="Wonky Logo"
       />
+
+      {loading && (
+        <div className="loader">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      )}
+
       <span className="entry-text">Web Developer Task</span>
     </div>
   );
