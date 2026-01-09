@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import "../style/Home.css";
 import Navbar from "../layout/Navbar";
 import Footers from "../layout/footers";
+import container from "../assets/container.png";
 
 
 const Home = () => {
@@ -30,7 +31,7 @@ const navigate = useNavigate();
 
       <div className="home-banner">
         <div>
-          <img src="/container.png" alt="" />
+          <img src={container} alt="1234" />
         </div>
       </div>
 
