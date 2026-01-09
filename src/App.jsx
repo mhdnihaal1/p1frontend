@@ -12,8 +12,8 @@ import AdminConfirm from './pages/AdminConfirm.jsx';
 function App() {
   return (
     <Routes>
-      {/* <Route path='/' element={<Entry />} /> */}
-      <Route path='/' element={<Home />} />
+      <Route path='/' element={<Entry />} />
+      <Route path='/home' element={<Home />} />
       <Route path='/detail/:id' element={<Detail />} />
       <Route path='/moreDetail/:id' element={<MoreDetail />} />
       <Route path='/confirm' element={<Confirm />} />
@@ -24,4 +24,4 @@ function App() {
   );
 }
 
-export default App;
+export default App; 
