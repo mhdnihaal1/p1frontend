@@ -1,5 +1,5 @@
 import React from "react";
-import "../style/ConfirmAlt.css";
+import "../style/Confirm.css";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../layout/Navbar";
 import Footers from "../layout/footers";
@@ -13,7 +13,7 @@ const Confirm = () => {
 
       {/* HEADER STRIP */}
       <div className="confirm-header">
-        <h3>Order Completed</h3>
+        <h3>Order Succesfull</h3>
       </div>
 
       {/* MAIN CONTENT */}
