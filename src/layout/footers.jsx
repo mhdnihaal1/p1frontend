@@ -41,9 +41,9 @@ const Footers = () => {
           <div className="appFooterCol">
             <h4 className="appFooterTitle">Follow Us</h4>
             <div className="appFooterSocial">
-            <img src="../../public/Facebook.png" alt="" />
-            <img src="../../public/Vector.png" alt="" />
-            <img src="../../public/Instagram.png" alt="" />
+                 <img src=" /Facebook.png" alt="" />
+            <img src=" /Vector.png" alt="" />
+            <img src=" /Instagram.png" alt="" />
             </div>
             <p className="appFooterNote">
               Stay connected for exclusive offers and updates!

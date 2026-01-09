@@ -4,8 +4,7 @@ import { useNavigate } from "react-router-dom";
 import "../style/Home.css";
 import Navbar from "../layout/Navbar";
 import Footers from "../layout/footers";
-import container from "../assets/container.png";
-
+ 
 
 const Home = () => {
 const navigate = useNavigate(); 
@@ -17,7 +16,7 @@ const navigate = useNavigate();
       try {
         const res = await axios.get("https://p1backend.onrender.com/products");
         setProducts(res.data);
-        console.log(res)
+        console.log(123,res)
        } catch (error) {
         console.error("Error fetching products:", error);
       }
@@ -31,7 +30,7 @@ const navigate = useNavigate();
 
       <div className="home-banner">
         <div>
-          <img src="/image2.png" alt="1234" />
+          <img src="/ProductCard(11).png" alt="1234" />
         </div>
       </div>
 
@@ -49,10 +48,11 @@ const navigate = useNavigate();
       <span className="wishlistIcon">♡</span>
       <img
         className="productImage"
-        src={`https://p1backend.onrender.com/uploads/${val.images[0]}`}
+        src={`https://p1backend.onrender.com/${val.images[0]}`}
+        
         alt={val.name}
       />
-      {/* {console.log(val.images[1])} */}
+      {console.log(123,":",val.images[1])}
     </div>
 
     <div className="productDetails">

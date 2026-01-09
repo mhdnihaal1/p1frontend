@@ -19,8 +19,8 @@ return(
           <div>
             <img
               className="home-image1"
-              src=" /image 16.png"
-              alt=" /image 16.png"
+              src=" /image16.png"
+              alt=" /image16.png123"
             />{" "}
           </div>
          <div className="search">
