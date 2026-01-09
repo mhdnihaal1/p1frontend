@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 const AdminConfirm = () => {
     const navigate = useNavigate()
     function goBack() {
-        navigate("/home")
+        navigate("/adminHome")
          }
     return(
        <div className="success-container">
