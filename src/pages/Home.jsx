@@ -48,7 +48,7 @@ const navigate = useNavigate();
       <span className="wishlistIcon">♡</span>
       <img
         className="productImage"
-        src={`${val.images[0]}`}
+        src={val.images[0]}
         alt={val.name}
       />
       {console.log(123,":",val.images[0])}
