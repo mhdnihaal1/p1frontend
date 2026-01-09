@@ -10,17 +10,17 @@ return(
           </div>
           <div className="nav-links">
             <span className="span1">Follow us:</span>
-            <img src="../../public/Facebook.png" alt="" />
-            <img src="../../public/Vector.png" alt="" />
-            <img src="../../public/Instagram.png" alt="" />
+            <img src=" /Facebook.png" alt="" />
+            <img src=" /Vector.png" alt="" />
+            <img src=" /Instagram.png" alt="" />
           </div>
         </div>
         <div className="Navbar2">
           <div>
             <img
               className="home-image1"
-              src="../../public/image 16.png"
-              alt="../../public/image 16.png"
+              src=" /image 16.png"
+              alt=" /image 16.png"
             />{" "}
           </div>
          <div className="search">
