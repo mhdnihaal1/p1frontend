@@ -53,8 +53,9 @@ const AdminDetails = () => {
     try {
       const res = await axios.post(
         "https://p1backend.onrender.com/addProduct",
-        formData
-      );
+        formData,{
+  headers: { "Content-Type": "multipart/form-data" }
+});
       console.log("Success:", res.data);
       if(res.data.status == 200){
         navigate("/adminConfirm")
