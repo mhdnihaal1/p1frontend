@@ -1,26 +1,34 @@
 import React from "react";
-import "../style/AdminConfirm.css"
+import "../style/AdminConfirm.css";
 import { useNavigate } from "react-router-dom";
 
 const AdminConfirm = () => {
-    const navigate = useNavigate()
-        
-         
-    return(
-<div class="page-wrapper">
-  <div class="success-container">
-    <button class="close-btn" onClick={()=>navigate("/adminHome")}>×</button>
+  const navigate = useNavigate();
 
-    <div class="success-icon"></div>
+  return (
+    <div className="confirm-wrapper">
+      <div className="confirm-card">
 
-    <h2 class="success-title">Success</h2>
-    <p class="success-message">
-      Your order has been placed successfully.
-    </p>
-  </div>
-</div>
+        <button
+          className="confirm-close"
+          onClick={() => navigate("/adminHome")}
+        >
+          ×
+        </button>
 
-    )
-}
+        <div className="confirm-icon">
+          <span>✔</span>
+        </div>
+
+        <h2 className="confirm-heading">Order Successful</h2>
+
+        <p className="confirm-text">
+          The order has been completed and saved successfully.
+        </p>
+
+      </div>
+    </div>
+  );
+};
 
 export default AdminConfirm;
