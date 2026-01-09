@@ -16,14 +16,14 @@ const navigate = useNavigate();
       try {
         const res = await axios.get("https://p1backend.onrender.com/products");
         setProducts(res.data);
-        console.log(123,res)
-       } catch (error) {
+        } catch (error) {
         console.error("Error fetching products:", error);
       }
     };
 
     fetchProducts();
   }, []);
+  
   return (
     <div className="home-container">
       <Navbar />
@@ -51,7 +51,7 @@ const navigate = useNavigate();
         src={`https://p1backend.onrender.com/${val.images[0]}`}
         alt={val.name}
       />
-      {console.log(123,":",val.images[1])}
+      {console.log(123,":",val.images[0])}
     </div>
 
     <div className="productDetails">
