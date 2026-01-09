@@ -31,7 +31,7 @@ const navigate = useNavigate();
 
       <div className="home-banner">
         <div>
-          <img src={container} alt="1234" />
+          <img src="/image2.png" alt="1234" />
         </div>
       </div>
 
