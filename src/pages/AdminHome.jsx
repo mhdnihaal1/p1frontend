@@ -64,7 +64,7 @@ const AdminHome =  () => {
       <td>{ind + 1}</td>
       <td>
         <img
-          src={val.images?.[0] ? `https://p1backend.onrender.com/${val.images[0]}` : "/placeholder.png"}
+          src={val.images[0]}
           alt={val.name ?? "Product Image"}
           style={{
             width: "60px",      // fits in the table nicely

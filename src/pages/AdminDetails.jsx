@@ -52,7 +52,7 @@ const AdminDetails = () => {
 
     try {
       const res = await axios.post(
-        "http://localhost:5000/addProduct",
+        "https://p1backend.onrender.com/addProduct",
         formData)
 
         console.log(123,123)
