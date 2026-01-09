@@ -1,0 +1,197 @@
+/* ============================= */
+/* RESET & GLOBAL STYLES */
+/* ============================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* ============================= */
+/* SUCCESS CONTAINER / MODAL */
+/* ============================= */
+.success-container {
+    background-color: white;
+    border-radius: 12px;
+    padding: 50px 40px;
+    max-width: 450px;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+/* CLOSE BUTTON */
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #999;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.3s;
+    line-height: 1;
+}
+
+.close-btn:hover {
+    color: #333;
+}
+
+/* SUCCESS ICON */
+.success-icon {
+    width: 80px;
+    height: 80px;
+    background-color: #4caf50;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 30px;
+    transition: all 0.3s ease;
+}
+
+.success-icon::before {
+    content: '✓';
+    color: white;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+/* SUCCESS TEXT */
+.success-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 12px;
+}
+
+.success-message {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* ============================= */
+/* RESPONSIVE MEDIA QUERIES */
+/* ============================= */
+
+/* Large Tablets / Laptops */
+@media (max-width: 1024px) {
+    .success-container {
+        padding: 40px 30px;
+        max-width: 400px;
+    }
+    .success-title {
+        font-size: 20px;
+    }
+    .success-message {
+        font-size: 14px;
+    }
+    .success-icon {
+        width: 70px;
+        height: 70px;
+    }
+    .success-icon::before {
+        font-size: 40px;
+    }
+}
+
+/* Tablets / Small Laptops */
+@media (max-width: 768px) {
+    .success-container {
+        padding: 35px 25px;
+        max-width: 350px;
+    }
+    .success-title {
+        font-size: 18px;
+    }
+    .success-message {
+        font-size: 13px;
+    }
+    .success-icon {
+        width: 60px;
+        height: 60px;
+    }
+    .success-icon::before {
+        font-size: 35px;
+    }
+    .close-btn {
+        top: 15px;
+        right: 15px;
+        font-size: 22px;
+    }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+    .success-container {
+        padding: 25px 20px;
+        max-width: 300px;
+    }
+    .success-title {
+        font-size: 16px;
+    }
+    .success-message {
+        font-size: 12px;
+    }
+    .success-icon {
+        width: 50px;
+        height: 50px;
+    }
+    .success-icon::before {
+        font-size: 28px;
+    }
+    .close-btn {
+        top: 10px;
+        right: 10px;
+        font-size: 20px;
+        width: 25px;
+        height: 25px;
+    }
+}
+
+/* Extra Small Phones */
+@media (max-width: 360px) {
+    .success-container {
+        padding: 20px 15px;
+        max-width: 260px;
+    }
+    .success-title {
+        font-size: 15px;
+    }
+    .success-message {
+        font-size: 11px;
+    }
+    .success-icon {
+        width: 45px;
+        height: 45px;
+    }
+    .success-icon::before {
+        font-size: 25px;
+    }
+    .close-btn {
+        top: 8px;
+        right: 8px;
+        font-size: 18px;
+        width: 22px;
+        height: 22px;
+    }
+}
