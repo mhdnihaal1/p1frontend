@@ -16,8 +16,8 @@ const navigate = useNavigate();
       try {
         const res = await axios.get("https://p1backend.onrender.com/products");
         setProducts(res.data);
-       console.log( products)
-      } catch (error) {
+        console.log(res)
+       } catch (error) {
         console.error("Error fetching products:", error);
       }
     };
@@ -48,9 +48,10 @@ const navigate = useNavigate();
       <span className="wishlistIcon">♡</span>
       <img
         className="productImage"
-        src={`https://p1backend.onrender.com/${val.images[0]}`}
+        src={`https://p1backend.onrender.com/uploads/${val.images[0]}`}
         alt={val.name}
       />
+      {/* {console.log(val.images[1])} */}
     </div>
 
     <div className="productDetails">
@@ -76,7 +77,7 @@ const navigate = useNavigate();
       <div className="home-banner2">
         <img
           className="home-banner2-img"
-          src="../../public/image 2.png"
+          src="/image2.png"
           alt=""
         />
       </div>
@@ -94,7 +95,7 @@ const navigate = useNavigate();
       <span className="wishlistIcon">♡</span>
       <img
         className="productImage"
-        src={`https://p1backend.onrender.com/${val.images[0]}`}
+        src={`https://p1backend.onrender.com/uploads/${val.images[0]}`}
         alt={val.name}
       />
     </div>
