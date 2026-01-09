@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom'
 import Entry from './pages/Entry.jsx';
 import Home from './pages/Home.jsx';
 import Detail from './pages/Details.jsx';
-import MoreDetail from './pages/moreDetails.jsx';
+import MoreDetail from './pages/MoreDetails.jsx';
 import Confirm from './pages/Confirm.jsx';
 import AdminHome from './pages/AdminHome.jsx';
 import AdminDetails from './pages/AdminDetails.jsx';
