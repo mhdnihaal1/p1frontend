@@ -57,15 +57,14 @@ const AdminDetails = () => {
 
         console.log(123,123)
 
-      // console.log("Success:", res.data);
-      // if(res.data.status == 200){
-        navigate("/adminDetail")
-        console.log(res)
-      // setName("")
-      // setPrice("")
-      // setDescription("")
-      // setImages([null, null, null, null])
-      // }
+      console.log("Success:", res.data);
+      if(res.data.status == 200){
+        navigate("/adminConfirm")
+       setName("")
+      setPrice("")
+      setDescription("")
+      setImages([null, null, null, null])
+      }
 // 
  
   
