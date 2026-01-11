@@ -98,14 +98,82 @@
   color: #f5f5f5;
 }
 
-/* RESPONSIVE */
+/* ========================= */
+/* LAPTOPS & SMALL DESKTOPS */
+/* ========================= */
+@media (max-width: 1024px) {
+  .appFooterInner {
+    padding: 45px 50px 20px;
+  }
+
+  .appFooterTop {
+    gap: 30px;
+  }
+}
+
+/* ========================= */
+/* TABLETS */
+/* ========================= */
 @media (max-width: 768px) {
   .appFooterInner {
-    padding: 40px 20px;
+    padding: 40px 25px;
   }
 
   .appFooterTop {
     flex-direction: column;
     gap: 30px;
+  }
+
+  .appFooterCol {
+    width: 100%;
+  }
+
+  .appFooterBottom {
+    font-size: 12.5px;
+  }
+}
+
+/* ========================= */
+/* LARGE PHONES */
+/* ========================= */
+@media (max-width: 600px) {
+  .appFooterTitle {
+    font-size: 15px;
+  }
+
+  .appFooterText,
+  .appFooterList li {
+    font-size: 13.5px;
+  }
+
+  .appFooterSocial img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* ========================= */
+/* SMALL PHONES */
+/* ========================= */
+@media (max-width: 480px) {
+  .appFooterInner {
+    padding: 30px 16px;
+  }
+
+  .appFooterTitle {
+    font-size: 14.5px;
+  }
+
+  .appFooterText,
+  .appFooterList li {
+    font-size: 13px;
+  }
+
+  .appFooterBottom {
+    font-size: 12px;
+  }
+
+  .appFooterDivider {
+    margin: 20px 0 12px;
   }
 }

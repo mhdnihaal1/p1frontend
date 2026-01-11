@@ -271,12 +271,4 @@ body {
   color: #555555;
   letter-spacing: 0.5px;
 }
- .footer-inner{
-        display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 0px;
-    background-color: #A93717;
-    border-top: 1px solid #e0e0e0;
-    flex-wrap: wrap;
-}
+ 

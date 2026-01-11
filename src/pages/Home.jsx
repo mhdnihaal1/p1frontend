@@ -25,7 +25,7 @@ const navigate = useNavigate();
   }, []);
 
   return (
-    <div className="home-container">
+    <main className="home-container">
       <Navbar />
 
       <div className="home-banner">
@@ -133,7 +133,7 @@ const navigate = useNavigate();
   </div> *
  </div>
      <Footers/>
-    </div>
+    </main>
   );
 };
 export default Home;

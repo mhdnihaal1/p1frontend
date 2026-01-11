@@ -36,12 +36,12 @@ useEffect(() => {
 
 
   return (
-    <div className="home-container">
+    <main className="home-container">
       {/* NAVBAR */}
             <Navbar/>
 
       {/* PRODUCT */}
-      <div className="product-container">
+      <div className="pd-wrapper">
         <div className="image-section">
            <div className="thumbnail-column"  >
             <img
@@ -175,7 +175,7 @@ useEffect(() => {
       {/* FOOTER */}
            <Footers/>
 
-    </div>
+    </main>
   );
 };
 
